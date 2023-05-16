@@ -4,7 +4,40 @@
     box-sizing: border-box;
 }
 .container{
-    height: 120vh;
+    height: 900px;
+    width: fit-content;
     width: auto;
     background: linear-gradient(white,rgb(82, 16, 16));
+}
+.flipbook .pages{
+    height: 100vh;
+}
+.image{
+    height: 50vh;
+    width: 10vh;
+}
+.content{
+    padding-top: 200px;
+}
+.flipbook{
+    margin-left: 40%;
+    margin-right: 40%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0deg);
+}
+.pages{
+    display: flex;
+    justify-content: first baseline;
+    
+}
+#pg1{
+    z-index: 3;
+}
+#pg2{
+    z-index: 2;
+}
+#pg1{
+    z-index: 1;
 }
