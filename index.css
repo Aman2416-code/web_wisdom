@@ -14,10 +14,17 @@
 }
 .image{
     height: 50vh;
-    width: 10vh;
+    width: 1vh;
+    float: left;
+}
+#pg2{
+    width: 1px;
 }
 .content{
     padding-top: 200px;
+    margin-left: 50%;
+    float: right;
+
 }
 .flipbook{
     margin-left: 40%;
@@ -28,16 +35,26 @@
     transform: translateY(0deg);
 }
 .pages{
-    display: flex;
-    justify-content: first baseline;
+    display: inline-flex;
+    height: 100px;
+    margin: auto;
     
+
 }
+
 #pg1{
     z-index: 3;
+float: left; 
+transform-style: preserve-3d;
 }
 #pg2{
     z-index: 2;
 }
 #pg1{
     z-index: 1;
+}
+.next-btn:single-button{
+    transform: translateY(180deg);
+    transform-style: preserve-3d;
+
 }
